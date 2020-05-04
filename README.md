@@ -1,4 +1,4 @@
-# Text-to-Braille_Binary-Translator
+# Text to Braille-Binary Translator
 
 This java project is capable of representing **Braille** representation into Binary code. 
 
