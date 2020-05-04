@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Solution{
     
     public static String solution(String s)
@@ -20,8 +22,6 @@ public class Solution{
             
             else {
                 
-                //System.out.println("\n" + s.charAt(i));
-                
                 for (int x=0; x < ba.length; x++){
                     
                     if(Character.toUpperCase(s.charAt(i)) ==  alphas[x]){
@@ -31,7 +31,7 @@ public class Solution{
                         }
                         
                         for(int y=0; y < 6; y++){
-                            str += ba[x][y]);
+                            str += ba[x][y];
                         }
                     
                     break;
@@ -41,12 +41,17 @@ public class Solution{
             }
         }
         
-        return s;
+        return str;
     }    
         
      public static void main(String []args){
+
+         Scanner in = new Scanner(System.in);
         
-        System.out.println(Solution.solution("The quick brown fox jumps over the lazy dog")); 
+        System.out.println("Input:\n");
+        String str = in.nextLine();
+
+        System.out.println("Output:\n" + Solution.solution(str)); 
      }
      
 }
